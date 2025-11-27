@@ -4,36 +4,36 @@ Quick guide to deploy your modernized KAAI website to various hosting platforms.
 
 ---
 
-## 🚀 Option 1: GitHub Pages (Recommended - Free)
+## 🚀 Option 1: GitHub Pages (✨ RECOMMENDED - Easiest & Free)
 
 ### Prerequisites
 - GitHub account
 - Git installed locally
+- Repository already pushed to GitHub
 
-### Steps
+### Quick Setup (2 Minutes!)
 
-1. **Create GitHub Repository**
-   ```bash
-   # If you haven't already initialized git
-   git init
-   git add .
-   git commit -m "Initial commit - Modernized KAAI website"
-   ```
-
-2. **Push to GitHub**
-   ```bash
-   # Create a new repository on GitHub first, then:
-   git remote add origin https://github.com/YOUR_USERNAME/kaai-website.git
-   git branch -M main
-   git push -u origin main
-   ```
-
-3. **Enable GitHub Pages**
+1. **Enable GitHub Pages**
    - Go to your repository on GitHub
    - Click **Settings** → **Pages** (left sidebar)
-   - Under "Source", select branch: `main`
-   - Click **Save**
-   - Your site will be live at: `https://YOUR_USERNAME.github.io/kaai-website/`
+   - Under "Build and deployment" → **Source**: Select **"GitHub Actions"**
+   - That's it! (Auto-saves)
+
+2. **Push Latest Changes**
+   ```bash
+   git add -A
+   git commit -m "Deploy with GitHub Pages"
+   git push origin main
+   ```
+
+3. **Watch It Deploy**
+   - Go to **Actions** tab
+   - See "Deploy to GitHub Pages" running
+   - Wait ~30 seconds
+   - ✅ Done!
+
+4. **Your Site is Live!**
+   - Visit: `https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/`
 
 4. **Add Custom Domain** (Optional)
    - In GitHub Pages settings, add your domain: `www.keralaaiacademy.com`
