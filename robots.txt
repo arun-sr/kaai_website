@@ -1,0 +1,13 @@
+# robots.txt for KAAI Website
+# https://www.keralaaiacademy.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.keralaaiacademy.com/sitemap.xml
+
+# Disallow admin or private pages (if any in future)
+# Disallow: /admin/
+# Disallow: /private/
+
